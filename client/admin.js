@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof createAdminHeader === 'function') {
+        createAdminHeader();
+    }
+
 let allModels = [];
 
 async function fetchModels() {
@@ -127,4 +132,5 @@ window.addEventListener('click', function(event) {
 
 // Si tienes un botón para aplicar filtros, añade su listener aquí
 
+});
 });

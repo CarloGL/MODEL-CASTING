@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    if (typeof createAdminHeader === 'function') {
+        createAdminHeader();
+    }
+document.addEventListener('DOMContentLoaded', function() {
     const scanner = new Html5QrcodeScanner("scanner-container", { fps: 10, qrbox: 250 });
     let currentModelId = null;
     
@@ -100,4 +104,5 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('result').textContent = 'An error occurred while updating model status.';
         }
     }
+});
 });
