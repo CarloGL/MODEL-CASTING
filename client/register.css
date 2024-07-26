@@ -1,0 +1,161 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.form-box {
+    width: 700px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 35px;
+    flex: 1;
+}
+
+.user-box input,
+.user-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: #060606;
+    margin-bottom: 10px;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box input:focus ~ label,
+.user-box input:valid ~ label,
+.user-box select:focus ~ label,
+.user-box select:valid ~ label {
+    top: -30px;
+    left: 0;
+    color: #ff0000;
+    font-size: 12px;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+#profilePic {
+    display: none;
+}
+
+#profilePicLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+#profilePicLabel:hover {
+    transition: all ease 0.4s;
+    background-color: #615f5f;
+    color: #fff;
+}
+
+#profilePicPreview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 1;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+@keyframes sheen {
+    100% {
+      transform: rotateZ(60deg) translate(1em, -9em);
+    }
+  }
+
+[anim="sheen"]:not(.toggled)::after {
+    animation: sheen var(--ease-elastic-in-1) 1s infinite;
+}
+
+[anim="sheen"]::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    bottom: -50%;
+    left: -50%;
+    background: #ffffff60;
+    transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+button {
+    all: unset;
+    background-color: #000;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: 1px solid #fff;
+    box-shadow: 0 0 4px #fff;
+    cursor: pointer;
+    perspective: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover{
+    background-color: #252525;
+    transition: all ease-in-out 0.4s;
+}
+
+.buttonregister{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}

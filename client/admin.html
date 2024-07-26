@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Models CRUD</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Admin Panel - Models CRUD</h1>
+    
+    <div id="filters">
+        <input type="text" id="statusFilter" placeholder="Status">
+        <input type="text" id="genderFilter" placeholder="Gender">
+        <input type="number" id="ageFilter" placeholder="Age">
+        <input type="text" id="participationNumberFilter" placeholder="Participation Number">
+        <input type="text" id="fullNameFilter" placeholder="Full Name">
+        <button onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <table id="modelsTable">
+        <thead>
+            <tr>
+                <th>Participation Number</th>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>TikTok</th>
+                <th>Instagram</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+         
+          
+
+         
+        <tbody id="modelsTableBody">
+            <!-- Table rows will be inserted here dynamically -->
+        </tbody>
+    </table>
+
+    <!-- Añade esto justo antes del cierre del body -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <div id="popupContent"></div>
+    </div>
+</div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.models-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.model {
+    border: 1px solid #fff;
+    padding: 0px 10px 30px 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.model h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+/* .model img {
+    border-radius: 50px;
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+} */
+
+.qr-and-number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.participation-number {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.qr-container {
+    margin-right: 10px;
+}
+
+.info-grid {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-row span {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 0.9em;
+}
+
+.profile-image {
+    margin-top: -20px;
+    width: 80%;
+    border-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.qr-container img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 0% !important;
+}
+
+@media (max-width: 768px) {
+    .models-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

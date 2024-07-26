@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Model</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="form-box">
+        <form id="registerForm" enctype="multipart/form-data">
+            <!-- AQUI SOLICITA UNA FOTO DE PERFIL -->
+            <div class="profile-pic-container">
+                <input type="file" id="profilePic" name="profilePicture" accept="image/*" required>
+                <label for="profilePic" id="profilePicLabel">Profile Picture</label>
+                <img id="profilePicPreview" alt="Vista previa de la foto de perfil">
+            </div>
+            <!-- AQUI SOLICITA EL NOMBRE COMPLETO -->
+            <div class="form-row">
+                <div class="user-box">
+                    <input type="text" id="fullName" name="fullName" required>
+                    <label for="fullName">Full Name:</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" name="age" required>
+                    <label for="age">Age:</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="user-box">
+                    <input type="email" name="emailAddress" required>
+                    <label for="emailAddress">Email:</label>
+                </div>
+                <div class="user-box">
+                    <input type="tel" name="phoneNumber" required>
+                    <label for="phoneNumber">Phone:</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="user-box">
+                    <select name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="user-box">
+                    <select name="availability" required>
+                        <option value="Available">Available</option>
+                        <option value="Not available">Not available</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="user-box">
+                    <input type="text" name="tiktokUsername" required>
+                    <label for="tiktokUsername">Tiktok Username:</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="instagramUsername" required>
+                    <label for="instagramUsername">Instagram Username:</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="user-box">
+                    <input type="url" name="portfolioLink" required>
+                    <label for="portfolioLink">Portfolio Link:</label>
+                </div>
+                <div class="user-box">
+                    <input type="url" name="walkVideoLink" required>
+                    <label for="walkVideoLink">Walk Video Link:</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="user-box">
+                    <input type="number" name="height" required>
+                    <label for="height">Height:</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" name="weight" required>
+                    <label for="weight">Weight:</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" name="waist" required>
+                    <label for="waist">Waist:</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" name="hips" required>
+                    <label for="waist">Hips:</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="user-box">
+                    <input type="text" name="bio" required></input>
+                    <label for="waist">Bio:</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="experience" required></input>
+                    <label for="waist">Experience:</label>
+                </div>
+            </div>
+            <div class="buttonregister">
+                <button anim="sheen" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="register.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#app h1{
+    color: #333;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#app {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#scanner-container {
+    font-family: 'Outfit', sans-serif !important;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+#manual-input {
+    font-family: 'Outfit', sans-serif !important;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#model-id {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#check-in-button {
+    font-family: 'Outfit', sans-serif;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: solid 1px #000000;
+    cursor: pointer;
+}
+
+#check-in-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Modificar los estilos de los botones */
+#accept-model, #deny-model {
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#accept-model {
+    background-color: #28a745;
+}
+
+#deny-model {
+    background-color: #dc3545;
+}
+
+
+/* Estilos para el popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#accept-model, #deny-model {
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#accept-model {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    background-color: #28a745;
+    font-weight: 100;
+}
+
+#deny-model {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #dc3545;
+}

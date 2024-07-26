@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.model-details-container {
+    display: flex;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.data-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.participation-number {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.accept-button, .deny-button {
+    margin: 20px 20px 0 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s ;
+}
+
+.accept-button {
+    background-color: #000000;
+    color: white;
+    border: solid 1px #fff;
+}
+
+.deny-button {
+    background-color: #000000;
+    color: white;
+    border: solid 1px #fff;
+}
+
+.accept-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.deny-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .model-details-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+

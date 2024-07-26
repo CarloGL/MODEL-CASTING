@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Check-in</title>
+    <link rel="stylesheet" href="admin-checkin.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Model Check-in</h1>
+        <div id="scanner-container"></div>
+        <div id="manual-input">
+            <input type="text" id="model-id" placeholder="Enter Model ID">
+            <button id="check-in-button">Check In</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Model Details</h2>
+            <div id="model-info"></div>
+            <button id="accept-model">Accept</button>
+            <button id="deny-model">Deny</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <script src="admin-checkin.js"></script>
+</body>
+</html>
